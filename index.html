@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michigan Retina-Vitreous Institute® — Flint, Michigan</title>
+  <meta name="description" content="Michigan Retina-Vitreous Institute provides state-of-the-art, high quality retinal care for patients in Flint and mid-Michigan.">
+  <meta name="keywords" content="Michigan Retina-Vitreous Institute, Michigan retina, retina specialist, ophthalmologist, Flint, mid-Michigan, macular degeneration, diabetic eye disease, retinal detachment">
+  <meta name="robots" content="ALL">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Slideshow */
+    #slideshow-wrap {
+      background: var(--black);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+      max-height: 340px;
+      position: relative;
+    }
+    .slide { display: none; }
+    .slide img { width: 100%; max-height: 340px; object-fit: cover; opacity: 0.75; }
+    .slide.active { display: block; animation: fadeSlideUp 0.8s ease; }
+
+    /* Quick action strip */
+    .quick-strip {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      background: var(--dark);
+    }
+    .quick-strip a {
+      flex: 1;
+      text-align: center;
+      padding: 0.85rem 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-right: 1px solid var(--border);
+      transition: var(--transition);
+    }
+    .quick-strip a:last-child { border-right: none; }
+    .quick-strip a:hover { color: var(--accent); background: rgba(200,169,110,0.05); }
+    .quick-strip i { display: block; font-size: 1.2rem; margin-bottom: 0.3rem; color: var(--accent); }
+
+    /* Welcome video section */
+    .video-section {
+      background: var(--black);
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+    }
+    .video-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .video-grid-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+    }
+    @media (max-width: 700px) {
+      .video-grid { grid-template-columns: 1fr; }
+      .quick-strip { flex-wrap: wrap; }
+      .quick-strip a { flex: 0 0 50%; border-bottom: 1px solid var(--border); }
+    }
+  </style>
+</head>
+<body>
+
+<header id="mrvi-header">
+  <div class="header-bg-bar"></div>
+  <div class="header-inner">
+    <h1>Michigan Retina&#8209;Vitreous Institute</h1>
+    <div class="accent-rule"></div>
+    <div class="header-sub">
+      <span><i class="fa fa-map-marker"></i> 1290 South Linden Road, Flint, Michigan 48532</span>
+      <span><i class="fa fa-phone"></i> (810) 732&#8209;6231</span>
+    </div>
+  </div>
+</header>
+
+<nav id="mrvi-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="active">Home</a>
+    <a href="location.html">Location</a>
+    <div class="nav-dropdown">
+      <button>Our Physician <i class="fa fa-caret-down"></i></button>
+      <div class="nav-dropdown-content">
+        <a href="doctor.html">Steven Boskovich, M.D.</a>
+        <a href="retinaspecialist.html">What is a Retina Specialist</a>
+      </div>
+    </div>
+    <a href="services.html">Our Services</a>
+    <div class="nav-dropdown">
+      <button>Your Visit <i class="fa fa-caret-down"></i></button>
+      <div class="nav-dropdown-content">
+        <a href="whattoexpect.html">What to Expect</a>
+        <a href="patientsurvey.html">Patient Survey</a>
+        <a href="newsletter.html">Newsletter Sign Up</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <button>Patient Forms <i class="fa fa-caret-down"></i></button>
+      <div class="nav-dropdown-content">
+        <a href="media/NEW PATIENT MEDICAL HISTORY FORM 2017.pdf" target="_blank">New Patient Medical History Form</a>
+        <a href="media/NEW PATIENT PROFILE FORM 2017.pdf" target="_blank">New Patient Profile Form</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <button>Patient Resources <i class="fa fa-caret-down"></i></button>
+      <div class="nav-dropdown-content">
+        <a href="links.html">Educational Links</a>
+        <a href="retinaldiseases.html">Retinal Diseases</a>
+        <a href="vitamins.html">Vitamins</a>
+      </div>
+    </div>
+    <a href="https://www.mypatientvisit.com" target="_blank">Patient Portal</a>
+    <a href="http://www.retinal.md/blog" target="_blank">Blog</a>
+    <a href="referrals.html">Referrals</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="https://www.mypatientvisit.com/#/expresspay?practiceID=MRVI" target="_blank" class="nav-cta">Pay a Bill</a>
+  </div>
+</nav>
+
+<!-- Slideshow -->
+<div id="slideshow-wrap">
+  <div class="slide active"><img src="media/Linden Crossing black.jpg" alt="Office exterior"></div>
+  <div class="slide"><img src="media/photomontage.png" alt="Services montage"></div>
+  <div class="slide"><img src="media/Dr B with diplomas.jpg" alt="Dr. Boskovich"></div>
+</div>
+
+<!-- Quick access strip -->
+<div class="quick-strip">
+  <a href="contactus.html"><i class="fa fa-phone"></i>(810) 732-6231</a>
+  <a href="location.html"><i class="fa fa-map-marker"></i>Get Directions</a>
+  <a href="https://www.mypatientvisit.com" target="_blank"><i class="fa fa-user"></i>Patient Portal</a>
+  <a href="media/NEW PATIENT MEDICAL HISTORY FORM 2017.pdf" target="_blank"><i class="fa fa-file-text"></i>New Patient Forms</a>
+  <a href="referrals.html"><i class="fa fa-stethoscope"></i>Refer a Patient</a>
+</div>
+
+<!-- Main content -->
+<div class="page-content">
+  <div class="card-grid-3">
+
+    <div class="mrvi-card">
+      <h3 class="section-title" style="margin-bottom:1rem;">Retina Care in Mid-Michigan since 1993</h3>
+      <img src="media/fixedmap.jpg" alt="Mid-Michigan map" class="mrvi-img">
+      <p>We provide highly specialized medical and surgical care in the diagnosis and treatment of diseases of the retina, vitreous, and macula.</p>
+      <p>We accept professional referrals and self-referrals.</p>
+      <a href="services.html" class="btn btn-outline mt-2">Our Services</a>
+    </div>
+
+    <div class="mrvi-card">
+      <h3 class="section-title" style="margin-bottom:0.5rem;">Steven Boskovich, M.D., F.A.C.S.</h3>
+      <img src="media/VestibuleSign3.jpg" alt="Office sign" class="mrvi-img">
+      <div class="info-row" style="padding-top:0.5rem;">
+        <i class="fa fa-map-marker"></i>
+        <div class="info-row-text">1290 South Linden Road<br>Flint, Michigan 48532</div>
+      </div>
+      <div class="info-row">
+        <i class="fa fa-phone"></i>
+        <div class="info-row-text">(810) 732-6231</div>
+      </div>
+      <div class="info-row">
+        <i class="fa fa-clock-o"></i>
+        <div class="info-row-text">Monday – Friday: 8:00 AM – 4:00 PM</div>
+      </div>
+    </div>
+
+    <div class="mrvi-card">
+      <h3 class="section-title" style="margin-bottom:1rem;">Dedicated Treatment of:</h3>
+      <img src="media/Black chair.jpg" alt="Exam chair" class="mrvi-img" style="max-height:140px;object-fit:cover;">
+      <ul style="margin-top:1rem;">
+        <li>Age-related Macular Degeneration</li>
+        <li>Diabetic Eye Disease</li>
+        <li>Retinal Tears and Detachment</li>
+        <li>Retinal Vein Occlusions</li>
+        <li>Macular Holes &amp; Macular Puckers</li>
+        <li>Uveitis and other retinal conditions</li>
+      </ul>
+      <a href="retinaldiseases.html" class="btn btn-outline mt-3">Learn About Conditions</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Welcome Video Section -->
+<div class="video-section">
+  <div class="video-grid">
+    <div>
+      <p class="text-muted" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.4rem;">Welcome</p>
+      <h2 class="video-grid-label">Michigan Retina&#8209;Vitreous Institute</h2>
+      <p>Watch our introduction video to learn more about our practice, our physician, and the comprehensive retinal care we provide to patients across mid-Michigan.</p>
+      <a href="doctor.html" class="btn btn-gold mt-2">Meet Dr. Boskovich</a>
+    </div>
+    <div>
+      <div class="video-wrap">
+        <video controls>
+          <source src="media/Michigan Retina-Vitreous Institute.mp4" type="video/mp4">
+          <source src="media/Michigan Retina-Vitreous Institute.ogv" type="video/ogv">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-wrap" style="margin-top:1rem;">
+        <video controls>
+          <source src="media/See for a Lifetime TV PSA 30.mp4" type="video/mp4">
+          <source src="media/See for a Lifetime TV PSA 30.ogv" type="video/ogv">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-label">See for a Lifetime — Public Service Announcement</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="mrvi-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <strong>Michigan Retina&#8209;Vitreous Institute &reg;</strong>
+      &copy; <script>document.write(new Date().getFullYear())</script> &mdash; All Rights Reserved
+    </div>
+    <div class="footer-links">
+      <a href="careers.html">Careers</a>
+      <a href="media/MRVI-2013-Privacy.pdf" target="_blank">Privacy Policy</a>
+      <a href="media/MRVI-NonDiscrimination-Notice.pdf" target="_blank">Non-Discrimination Policy</a>
+      <a href="https://www.ontheclock.com/time-clock" target="_blank" style="color:var(--border);">Employee Time Clock</a>
+    </div>
+    <a class="footer-top-btn" href="#mrvi-header"><i class="fa fa-chevron-circle-up"></i> Back to Top</a>
+  </div>
+</footer>
+
+<div id="copyright-modal" class="mrvi-modal">
+  <div class="mrvi-modal-box">
+    <button class="mrvi-modal-close" onclick="document.getElementById('copyright-modal').classList.remove('open')">&times;</button>
+    <h4 style="margin-bottom:0.8rem;">Content Ownership Notice</h4>
+    <p>The content on this website is owned by Michigan Retina&#8209;Vitreous Institute. You may not copy any content (including images) without our prior written consent.</p>
+  </div>
+</div>
+
+<script>
+// Slideshow
+var slideIdx = 0;
+var slides = document.querySelectorAll('.slide');
+function runSlides() {
+  slides[slideIdx].classList.remove('active');
+  slideIdx = (slideIdx + 1) % slides.length;
+  slides[slideIdx].classList.add('active');
+  setTimeout(runSlides, 7000);
+}
+setTimeout(runSlides, 7000);
+</script>
+</body>
+</html>
